@@ -1,0 +1,516 @@
+/* basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+/* form styling */
+ #body {
+    background-image: url("img/—Pngtree—clothing men's clothing store shopping_1485281.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+form {
+    width: 400px;
+    height: 90vh;
+    overflow-y: scroll;
+    margin: 10px auto;
+    box-shadow:-3px 3px 10px 3px   black;
+    background-color: rgba(255, 255, 255, 0.719);
+    font-style: italic;
+    font-weight: bold;
+}
+
+form h2 {
+    text-decoration: underline;
+}
+
+fieldset {
+    padding: 12px;
+    margin: 5px;
+}
+
+legend {
+    font-size: 25px;
+}
+
+.pers input{
+    /* display: block; */
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    outline: none;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.pers label{
+    position: relative;
+    top: 15px;
+    transition: .2s ease-in;
+}
+
+.pers:focus-within label {
+     position: relative;
+     top: 0px;
+}
+
+
+input,
+select {
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: 22px;
+    padding: 15px;
+}
+
+#color{
+    width: 30px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+}
+
+.btn{
+    width: 40%;
+    padding: 5px 0;
+    margin: 10px 5px;
+    border-bottom: 2px solid black;
+    position: relative;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.918);
+}
+
+
+/*marquee styling*/
+marquee {
+    background-color: rgb(88, 85, 85);
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+
+/* navvbar styling */
+#alharam{
+    text-align: center;
+    padding: 10px 0;
+    background-color: white;
+}
+
+header h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+nav {
+    padding: 12px;
+    box-shadow: 0 2px 3px black;
+    background-color: white;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a:hover,
+#active {
+    background-color: grey;
+    color: white;
+    text-shadow: 2px 2px black;
+    transition: all .2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 4px 8px;
+}
+
+/* main styling of fornt page */
+
+.main {
+    height: 66vh;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.301), rgba(0, 0, 0, 0.486)), url(img/7578122.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 0 2px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upstyle p {
+    margin: 15px;
+}
+
+.button {
+    width: 250px;
+    padding: 12px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.623);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.button:hover {
+    background-color: grey;
+    transition: all .3s ease;
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+
+.button:hover a {
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+
+h2 {
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* collections */
+.men,
+.women {
+    display: flex;
+    overflow-x: scroll;
+    margin: 0 50px;
+}
+
+.img {
+    margin: 10px;
+    box-shadow: 0 3px 3px black;
+}
+
+.img:hover {
+    transform: translateY(-10%);
+    transition: all .5s ease;
+   
+}
+
+
+figcaption {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.shop {
+    width: 200px;
+    margin: 5px 0;
+    padding: 10px;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.shop::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s ease;
+
+}
+
+.shop:hover::before{
+    width: 100%;
+}
+.shop:hover{
+    color: white;
+
+}
+
+
+figure img {
+    height: 300px;
+}
+
+/* showcase frame styling */
+
+.frame {
+    display: flex;
+    justify-content: center;
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    grid-template-rows: repeat(2, 40vw);
+    row-gap: 2rem;
+    column-gap: 1rem;
+}
+
+.showcase img:first-child,
+.showcase img:nth-child(2) {
+    width: 30vw;
+    height: 40vw;
+}
+
+.showcase img:nth-child(3) {
+    width: 62vw;
+    height: 30vw;
+}
+
+
+/* about styling */
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#about p {
+    font-style: italic;
+    text-indent: 50px;
+    font-size: 18px;
+}
+
+#about{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.about{
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    box-shadow: 3px 3px 4px 2px black;
+    margin: 20px;
+    transition: .5s ease;
+   
+}
+
+.about:hover{
+    transform: rotateY(45deg);
+    background-color: black;
+}
+
+h4{
+    margin: 40px 0;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    
+
+}
+
+@media screen  and (max-width:750px){
+    .about{
+        width: 100vw;
+    
+    }
+}
+
+/* footer styling */
+
+footer {
+    margin: 100px 0;
+    text-align: center;
+}
+
+footer ul li {
+    padding: 5px;
+}
+
+footer ul li a {
+    font-size: 20px;
+    transition: .3s ease;
+}
+
+footer ul li a:hover
+,footer ul li a:focus{
+    font-size: 30px;
+  
+}
+
+footer h2 {
+    text-decoration: underline;
+}
+
+
+
+
+main ul li {
+    margin: 5px 25px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+
+
+/* button animation */
+
+.button span:nth-child(1) {
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    animation: anim1 3s linear infinite;
+}
+
+@keyframes anim1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.button span:nth-child(2) {
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    animation: anim2 3s linear infinite 1.5s;
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.button span:nth-child(3) {
+    border-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    animation: anim3 3s linear infinite;
+}
+
+@keyframes anim3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.button span:nth-child(4) {
+    border-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    animation: anim4 3s linear infinite 1.5s;
+}
+
+@keyframes anim4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@media screen and (max-width:700px) {
+    #upstyle {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        margin-left: 80px;
+    }
+}
+
+
+/* SALE styling */
+
+#saleboard{
+    background-color: rgb(36, 112, 36);
+    color: white;
+    padding: 5px 25px;
+    z-index: 5;
+    border-radius: 5px;
+    text-shadow: 2px  0px 2px black;
+    position: fixed;
+    top: 40px;
+   right: 10px;
+    transform-origin: 40%;
+    animation: saleboard 2s infinite ease-in-out;
+}
+
+@keyframes saleboard {
+    20%{
+        transform: rotateZ(10deg);
+    }
+    40%{
+        transform: rotateZ(-10deg);
+    }
+    60%{
+        transform: rotateZ(10deg); 
+    }
+    80%{
+        transform: rotateZ(-10deg);
+    }
+    100%{
+        transform: rotateZ(10deg); 
+    }
+}

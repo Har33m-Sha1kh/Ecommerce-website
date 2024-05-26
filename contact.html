@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <nav>
+        <ul>
+            <li><a href="index.html" target="-blank">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#" id="active">Contact Us</a></li>
+            <li><a href="index.html#showcase">New Arrivals</a></li>
+            <li><a href="index.html#sale">Sale</a></li>
+        </ul>
+    </nav>
+    
+    <form action="action.php">
+        <h2>Sign In <br>To remain in contact</h2>
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <div class="pers">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  minlength="4" maxlength="15"
+                    required>
+            </div>
+
+
+            <div class="pers">
+                <label for="fname">Father Name:</label>
+                <input type="text" id="fname" name="fname" minlength="4" maxlength="15"
+                    required>
+            </div>
+
+            <div class="pers">
+                <label for="tel">Contact No:</label>
+                <input type="tel" id="tel" name="tel" maxlength="11" minlength="11"  required>
+            </div>
+
+
+            <div class="pers">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" pattern=".+@gmail.com" 
+                    required>
+            </div>
+            <div class="pers">
+            <label for="idcard pic">ID card picture:</label>
+                <input type="file" multiple name="idcard pic" id="idcard" required>
+
+            </div>
+
+            <h3>Gender</h3>
+            <input type="radio" id="male" name="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="female">
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <h3>Religion</h3>
+            <input type="radio" id="Muslim" name="religion">
+            <label for="Muslim">Muslim</label>
+            <br>
+            <input type="radio" id="Non-Muslim" name="religion">
+            <label for="Non-Muslim">Non-Muslim</label>
+        </fieldset>
+        <fieldset>
+            <legend>Priorities</legend>
+            <label for="coll">Collection:</label>
+            <select name="coll" id="coll">
+                <option value="men">Men'wear</option>
+                <option value="women">Women'wear</option>
+                <option value="child" selected>Baby garments</option>
+            </select>
+            <br>
+            <label for="type">Genres:</label>
+            <select name="genra" id="genra">
+                <optgroup label="simple">
+                    <option value="frawks">Frawks</option>
+                    <option value="kurta">Kurta</option>
+                    <option value="saari">Saari</option>
+                </optgroup>
+                <optgroup label="fancy">
+                    <option value="frawks">Frawks</option>
+                    <option value="kurta">Kurta</option>
+                    <option value="saari">Saari</option>
+                </optgroup>
+
+            </select>
+            <br>
+            <label for="color">Fav-color:</label>
+            <input type="color" id="color">
+
+            <h3>Terms & Policies</h3>
+            <input type="checkbox" id="1">
+            <label for="1">I will pay in advance.
+                <br>
+                <input type="checkbox" id="2">
+                <label for="2">I am older than 18.
+                </label>
+                <br>
+                <input type="checkbox" id="3">
+                <label for="3">Credit cards & paypal user.
+                </label>
+                <br>
+                <input type="checkbox" id="4">
+                <label for="4">Will never break rules.
+                </label>
+        </fieldset>
+        <input type="submit" class="btn">
+        <input type="reset" class="btn">
+
+
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
